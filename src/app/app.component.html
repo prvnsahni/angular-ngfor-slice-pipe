@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<ul>
+  <li *ngFor="let num of myArray | slice: firstIndex : lastIndex">{{num}}</li>
+  <li *ngIf="!viewMore">
+    <a (click)="onClick('less')">view less</a>
+  </li>
+  <li *ngIf="viewMore">
+    <a (click)="onClick('more')">view more</a>
+  </li>
+</ul>
